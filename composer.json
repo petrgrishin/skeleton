@@ -1,0 +1,23 @@
+{
+    "name": "petrgrishin/skeleton",
+    "description": "Repository builder from skeleton",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/console": "~2.6",
+        "symfony/yaml": "~2.6",
+        "symfony/finder": "~2.6",
+        "symfony/process": "~2.6"
+    },
+    "authors": [
+        {
+            "name": "Petr Grishin",
+            "email": "petr.grishin@grishini.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PetrGrishin\\Skeleton\\": "src/"
+        }
+    }
+}
