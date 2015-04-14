@@ -16,13 +16,6 @@ class AbstractCommand extends Command
      */
     public function config()
     {
-        static $config;
-        if (!$config) {
-            $config = Config::byDefault();
-            $config
-                ->loadPathInfo()
-                ->loadConfigVendor();
-        }
-        return $config;
+        return $this->getApplication()->config();
     }
 }
